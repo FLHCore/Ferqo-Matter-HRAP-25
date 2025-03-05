@@ -26,8 +26,8 @@ PKG_SOURCE_SUBMODULES:=\
   third_party/nlio/repo
 
 # Hash can be regenerated with make package/matter-netman/check FIXUP=1
-PKG_SOURCE_DATE:=2024-08-28
-PKG_SOURCE_VERSION:=1d1319bd656fbc728fc2d9f796fdf58407e503ac
+PKG_SOURCE_DATE:=2025-03-05
+PKG_SOURCE_VERSION:=5becd8151e01eaf7577c47ebc86cce116680626a
 PKG_MIRROR_HASH:=f2a46a2d3cc9486c3b4669300e13af9cb1962c75cf7955dd2a682315d8194b7b
 
 # Use local source dir for development
@@ -84,6 +84,8 @@ endef
 
 # https://github.com/openwrt/openwrt/issues/13016
 TARGET_CFLAGS += -Wno-format-nonliteral
+TARGET_CXXFLAGS += -std=c++17
+TARGET_CXXFLAGS += -D_GNU_SOURCE
 
 TARGET_CFLAGS += \
 	-DCHIP_SYSLOG_IDENT=\"matter\"
