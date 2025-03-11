@@ -23,7 +23,22 @@ PKG_SOURCE_SUBMODULES:=\
   third_party/pigweed/repo \
   third_party/jsoncpp/repo \
   third_party/nlassert/repo \
-  third_party/nlio/repo
+  third_party/nlio/repo \
+  third_party/perfetto/repo \
+  third_party/libwebsockets/repo \
+  third_party/mbedtls/repo \
+  third_party/openthread/repo \
+  third_party/ot-br-posix/repo \
+  third_party/cirque/repo \
+  third_party/nanopb/repo \
+  third_party/editline/repo \
+  third_party/boringssl/repo \
+  third_party/imgui/repo \
+  third_party/lwip/repo \
+  third_party/abseil-cpp \
+  third_party/re2/src \
+  third_party/libdatachannel/repo
+
 
 # Hash can be regenerated with make package/matter-chip/check FIXUP=1
 PKG_SOURCE_DATE:=2025-03-05
