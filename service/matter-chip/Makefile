@@ -19,7 +19,7 @@ PKG_RELEASE:=1
 PKG_SOURCE_URL:=https://github.com/project-chip/connectedhomeip.git
 PKG_SOURCE_PROTO:=git
 PKG_SOURCE_MIRROR:=0 # don't try OpenWrt mirror
-#PKG_SOURCE_SUBMODULES:=\
+PKG_SOURCE_SUBMODULES:=\
   third_party/pigweed/repo \
   third_party/jsoncpp/repo \
   third_party/nlassert/repo \
@@ -31,7 +31,7 @@ PKG_SOURCE_VERSION:=5becd8151e01eaf7577c47ebc86cce116680626a
 PKG_MIRROR_HASH:=f2a46a2d3cc9486c3b4669300e13af9cb1962c75cf7955dd2a682315d8194b7b
 
 # Use local source dir for development
-# USE_SOURCE_DIR:=$(HOME)/Desktop/connectedhomeip
+# USE_SOURCE_DIR:=$(HOME)/workspace/connectedhomeip
 
 PKG_LICENSE:=Apache-2.0
 PKG_LICENSE_FILES:=LICENSE
